@@ -1,0 +1,10 @@
+<app-todo-form (addElementTodoListEvent)="addElementTodoListEventListener($event)"></app-todo-form>
+<mat-card class="mt-5">
+  <mat-card-content>
+    <mat-selection-list>
+      <mat-list-option *ngFor="let item of todoList">
+        {{item.title}} el dia {{item.date}}
+      </mat-list-option>
+    </mat-selection-list>
+  </mat-card-content>
+</mat-card>

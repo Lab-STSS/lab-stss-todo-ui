@@ -1,0 +1,19 @@
+<mat-card class="mt-5">
+  <mat-card-subtitle>** Ingrese su tarea por hacer</mat-card-subtitle>
+  <mat-card-content>
+    <div class="form-container">
+      <form>
+        <mat-form-field appearance="outline">
+          <mat-label>¿Que cosa?</mat-label>
+          <input matInput placeholder="¿Que cosa voy a hacer?" name="title" [(ngModel)]="todoItem.title">
+          <mat-icon matSuffix>check_circle</mat-icon>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>¿Cuando?</mat-label>
+          <input matInput placeholder="¿Cuando?" type="date" name="date" [(ngModel)]="todoItem.date">
+        </mat-form-field>
+        <button mat-raised-button color="primary" (click)="addElementTodoListClick()">Agregar</button>
+      </form>
+    </div>
+  </mat-card-content>
+</mat-card>
