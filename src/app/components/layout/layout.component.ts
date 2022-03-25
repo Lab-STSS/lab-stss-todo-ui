@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import packageJson from '../../../../package.json';
 
 @Component({
   selector: 'app-layout',
@@ -8,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class LayoutComponent implements OnInit {
 
   constructor() { }
+  version: string = packageJson.version;
 
   ngOnInit(): void {
   }
